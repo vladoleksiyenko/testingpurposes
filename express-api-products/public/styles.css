@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* Styling for page titles */
+.body-titles {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #c98c3d; /* Warm brown tone */
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 10px solid #161616; /* Adds a strong bottom border */
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Even spacing for nav items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Ensure headers are centered */
+h2, h3 {
+    text-align: center;
+}
+
+/* Product grid layout */
+#product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Adds spacing between product cards */
+    padding: 1rem;
+}
+
+/* Individual product card */
+section {
+    border: 1px solid #272727;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #afafaf; /* Light gray for contrast */
+    max-width: 20%;
+    position: relative;
+}
+
+/* Ensure images resize properly */
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Delete button for product cards */
+section .delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+section .delete:hover {
+    background-color: red; /* Red color on hover for better UX */
+}
+
+/* Ensures content doesn't stretch too wide */
+main {
+    width: 95vw;
+}
+
+/* Style for product details in list format */
+main li {
+    margin: 10px 0;
+}
+
+/* Form container for adding new products */
+.product-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+    background-color: #afafaf;
+    min-width: 400px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+/* Form input and label styling */
+.product-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels should have a slight bottom margin for spacing */
+.product-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Input fields and buttons */
+.product-form input,
+.product-form textarea,
+.product-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit button styling */
+.product-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.product-form button:hover {
+    background-color: #555; /* Slightly lighter color for hover effect */
+}

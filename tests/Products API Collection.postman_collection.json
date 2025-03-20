@@ -1,0 +1,513 @@
+{
+	"info": {
+		"_postman_id": "96c52652-cdb2-474c-a2e9-6408d12907bd",
+		"name": "Products API Collection",
+		"description": "A web api that stores product records",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41633588"
+	},
+	"item": [
+		{
+			"name": "Return all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "This endpoint makes a HTTP GET request to [http://localhost:6969/api/products](http://localhost:6969/api/products) and retreives the list of products"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6969/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3836"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"efc-KxUdZ1X6WFw+0GfdROHtd76fAbE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Products retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Wireless Headphones\",\n            \"category\": \"Electronics\",\n            \"price\": 99.99,\n            \"description\": \"High-quality sound with noise cancellation.\",\n            \"features\": [\n                \"Bluetooth 5.0\",\n                \"20-hour battery life\",\n                \"Lightweight design\"\n            ],\n            \"image\": \"/images/headphones.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Smart Thermostat\",\n            \"category\": \"Home Automation\",\n            \"price\": 149.99,\n            \"description\": \"Energy-efficient smart thermostat with app control.\",\n            \"features\": [\n                \"Wi-Fi enabled\",\n                \"Auto temperature adjustment\",\n                \"Voice control compatible\"\n            ],\n            \"image\": \"/images/thermostat.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Ergonomic Office Chair\",\n            \"category\": \"Furniture\",\n            \"price\": 229.99,\n            \"description\": \"Adjustable ergonomic chair with lumbar support.\",\n            \"features\": [\n                \"Mesh back\",\n                \"Adjustable armrests\",\n                \"360-degree swivel\"\n            ],\n            \"image\": \"/images/office-chair.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Mechanical Gaming Keyboard\",\n            \"category\": \"Gaming Accessories\",\n            \"price\": 129.99,\n            \"description\": \"RGB mechanical keyboard with customizable macros.\",\n            \"features\": [\n                \"Cherry MX switches\",\n                \"Per-key RGB lighting\",\n                \"Programmable keys\"\n            ],\n            \"image\": \"/images/keyboard.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Portable Espresso Maker\",\n            \"category\": \"Kitchen Appliances\",\n            \"price\": 59.99,\n            \"description\": \"Compact and manual espresso machine for on-the-go coffee lovers.\",\n            \"features\": [\n                \"Hand-powered\",\n                \"No electricity needed\",\n                \"Lightweight\"\n            ],\n            \"image\": \"/images/espresso-maker.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Smartwatch Pro 2\",\n            \"category\": \"Wearable Technology\",\n            \"price\": 199.99,\n            \"description\": \"Advanced smartwatch with health monitoring and GPS.\",\n            \"features\": [\n                \"Heart rate sensor\",\n                \"Sleep tracking\",\n                \"Water-resistant\"\n            ],\n            \"image\": \"/images/smartwatch.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Home Security Camera\",\n            \"category\": \"Home Security\",\n            \"price\": 89.99,\n            \"description\": \"1080p wireless security camera with night vision.\",\n            \"features\": [\n                \"Motion detection\",\n                \"Two-way audio\",\n                \"Cloud storage\"\n            ],\n            \"image\": \"/images/security-camera.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Electric Standing Desk\",\n            \"category\": \"Furniture\",\n            \"price\": 399.99,\n            \"description\": \"Adjustable height electric standing desk for improved ergonomics.\",\n            \"features\": [\n                \"Memory height settings\",\n                \"Spacious tabletop\",\n                \"Quiet motor\"\n            ],\n            \"image\": \"/images/standing-desk.jpg\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"4K Drone Camera\",\n            \"category\": \"Electronics\",\n            \"price\": 499.99,\n            \"description\": \"High-resolution drone with GPS and auto-stabilization.\",\n            \"features\": [\n                \"4K UHD camera\",\n                \"Foldable design\",\n                \"Auto return-to-home\"\n            ],\n            \"image\": \"/images/drone.jpg\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Smart Light Bulbs\",\n            \"category\": \"Home Automation\",\n            \"price\": 29.99,\n            \"description\": \"Wi-Fi enabled LED bulbs with voice control.\",\n            \"features\": [\n                \"Adjustable brightness\",\n                \"16 million colors\",\n                \"App and voice control\"\n            ],\n            \"image\": \"/images/smart-bulbs.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Wireless Charging Pad\",\n            \"category\": \"Electronics\",\n            \"price\": 39.99,\n            \"description\": \"Fast wireless charger for multiple devices.\",\n            \"features\": [\n                \"Qi certified\",\n                \"Fast charging\",\n                \"Non-slip surface\"\n            ],\n            \"image\": \"/images/charging-pad.jpg\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Robot Vacuum Cleaner\",\n            \"category\": \"Home Appliances\",\n            \"price\": 249.99,\n            \"description\": \"Smart robotic vacuum with mapping technology.\",\n            \"features\": [\n                \"Self-charging\",\n                \"App controlled\",\n                \"Voice assistant compatible\"\n            ],\n            \"image\": \"/images/robot-vacuum.jpg\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Noise-Cancelling Earbuds\",\n            \"category\": \"Electronics\",\n            \"price\": 79.99,\n            \"description\": \"Compact earbuds with active noise cancellation.\",\n            \"features\": [\n                \"Bluetooth 5.2\",\n                \"Long battery life\",\n                \"Water-resistant\"\n            ],\n            \"image\": \"/images/earbuds.jpg\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"VR Headset\",\n            \"category\": \"Gaming Accessories\",\n            \"price\": 349.99,\n            \"description\": \"Wireless VR headset with immersive 3D experience.\",\n            \"features\": [\n                \"6DOF tracking\",\n                \"High-resolution display\",\n                \"Built-in audio\"\n            ],\n            \"image\": \"/images/vr-headset.jpg\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Electric Scooter\",\n            \"category\": \"Outdoor & Sports\",\n            \"price\": 599.99,\n            \"description\": \"Foldable electric scooter with long-range battery.\",\n            \"features\": [\n                \"25 mph top speed\",\n                \"LED display\",\n                \"Dual brakes\"\n            ],\n            \"image\": \"/images/scooter.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "This endpoint makes a HTTP GET request to [http://localhost:6969/api/products/:id](http://localhost:6969/api/products/:id) and retreives a product by the id specified"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6969/api/products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "296"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"128-jlCiOCf9YB72x1jeD6o5QyBbjlY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product retrieved successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"Ergonomic Office Chair\",\n        \"category\": \"Furniture\",\n        \"price\": 229.99,\n        \"description\": \"Adjustable ergonomic chair with lumbar support.\",\n        \"features\": [\n            \"Mesh back\",\n            \"Adjustable armrests\",\n            \"360-degree swivel\"\n        ],\n        \"image\": \"/images/office-chair.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Products by category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products/category/:category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products",
+						"category",
+						":category"
+					],
+					"variable": [
+						{
+							"key": "category",
+							"value": ""
+						}
+					]
+				},
+				"description": "This endpoint makes a HTTP GET request to [http://localhost:6969/api/products/category/:category](http://localhost:6969/api/products/category/:category)\n\nand retreives all products that are within the specified category"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6969/api/products/category/Electronics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"Electronics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1021"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3fd-8DlmJ1M+fkzkwdgANdzE+tOA8Fg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Category retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Wireless Headphones\",\n            \"category\": \"Electronics\",\n            \"price\": 99.99,\n            \"description\": \"High-quality sound with noise cancellation.\",\n            \"features\": [\n                \"Bluetooth 5.0\",\n                \"20-hour battery life\",\n                \"Lightweight design\"\n            ],\n            \"image\": \"/images/headphones.jpg\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"4K Drone Camera\",\n            \"category\": \"Electronics\",\n            \"price\": 499.99,\n            \"description\": \"High-resolution drone with GPS and auto-stabilization.\",\n            \"features\": [\n                \"4K UHD camera\",\n                \"Foldable design\",\n                \"Auto return-to-home\"\n            ],\n            \"image\": \"/images/drone.jpg\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Wireless Charging Pad\",\n            \"category\": \"Electronics\",\n            \"price\": 39.99,\n            \"description\": \"Fast wireless charger for multiple devices.\",\n            \"features\": [\n                \"Qi certified\",\n                \"Fast charging\",\n                \"Non-slip surface\"\n            ],\n            \"image\": \"/images/charging-pad.jpg\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Noise-Cancelling Earbuds\",\n            \"category\": \"Electronics\",\n            \"price\": 79.99,\n            \"description\": \"Compact earbuds with active noise cancellation.\",\n            \"features\": [\n                \"Bluetooth 5.2\",\n                \"Long battery life\",\n                \"Water-resistant\"\n            ],\n            \"image\": \"/images/earbuds.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "This endpoint makes a HTTP POST request to [http://localhost:6969/api/products](http://localhost:6969/api/products) and adds a product to the list"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 16,\r\n    \"name\": \"Acer 1440p 34-inch 180hz Gaming Monitor\",\r\n    \"price\": 320,\r\n    \"category\": \"Electronics\",\r\n    \"description\": \"An amazing multi-tasking and gaming device\",\r\n    \"features\": [\"1440p\", \"180hz\"],\r\n    \"image\": \"http://fakeacerwebsite.com/acer34inch.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6969/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "283"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11b-lVWOiiEt+qvmaVgt5TOaOrtG6Gk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product added successfully\",\n    \"data\": {\n        \"id\": 16,\n        \"name\": \"Acer 1440p 34-inch 180hz Gaming Monitor\",\n        \"price\": 320,\n        \"category\": \"Electronics\",\n        \"description\": \"An amazing multi-tasking and gaming device\",\n        \"features\": [\n            \"1440p\",\n            \"180hz\"\n        ],\n        \"image\": \"http://fakeacerwebsite.com/acer34inch.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "This endpoint makes a HTTP PUT request to [http://localhost:6969/api/products/:id](http://localhost:6969/api/products/:id) and updates a product given an id and product changes"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 15,\r\n    \"name\": \"Electric Scooter (SALE)\",\r\n    \"category\": \"Outdoor & Sports\",\r\n    \"price\": 449.99,\r\n    \"description\": \"Foldable electric scooter with long-range battery.\",\r\n    \"features\": [\"25 mph top speed\", \"LED display\", \"Dual brakes\"],\r\n    \"image\": \"/images/scooter.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6969/api/products/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products",
+								"15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "294"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"126-ZIT1gmlHDI3M93NmiJOL2DB4gns\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product updated successfully\",\n    \"data\": {\n        \"id\": 15,\n        \"name\": \"Electric Scooter (SALE)\",\n        \"category\": \"Outdoor & Sports\",\n        \"price\": 449.99,\n        \"description\": \"Foldable electric scooter with long-range battery.\",\n        \"features\": [\n            \"25 mph top speed\",\n            \"LED display\",\n            \"Dual brakes\"\n        ],\n        \"image\": \"/images/scooter.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/api/products/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"api",
+						"products",
+						"15"
+					]
+				},
+				"description": "This endpoint makes a HTTP DELETE request to [http://localhost:6969/api/products/:id](http://localhost:6969/api/products/:id) and removes a product based off of the given id"
+			},
+			"response": [
+				{
+					"name": "Delete product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6969/api/products/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6969",
+							"path": [
+								"api",
+								"products",
+								"15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "294"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"126-sOCaLcyW+L9YHfoO012RVw7EPAA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Feb 2025 22:10:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product deleted successfully\",\n    \"data\": {\n        \"id\": 15,\n        \"name\": \"Electric Scooter (SALE)\",\n        \"category\": \"Outdoor & Sports\",\n        \"price\": 449.99,\n        \"description\": \"Foldable electric scooter with long-range battery.\",\n        \"features\": [\n            \"25 mph top speed\",\n            \"LED display\",\n            \"Dual brakes\"\n        ],\n        \"image\": \"/images/scooter.jpg\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

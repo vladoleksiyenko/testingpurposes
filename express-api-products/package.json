@@ -1,0 +1,39 @@
+{
+  "name": "mvc-rest-project",
+  "version": "1.0.0",
+  "description": "product mvc project",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreenRiverSoftwareDevelopment/take-home-mvc-rest-apis-vladoleksiyenko"
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Vlad Oleksiyenko",
+    "email": "vladolek2003@gmail.com",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": ""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
